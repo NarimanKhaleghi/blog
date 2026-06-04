@@ -1,17 +1,112 @@
-# Quartz v5
-
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
-
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
-
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
-
-## Sponsors
 
 <p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
+  <a href="#english-version">English</a> | <a href="#persian-version">فارسی</a>
 </p>
+
+<div dir="rtl" align="center">
+  
+# 📝 وبلاگ نریمان خالقی (The PM)
+
+**آدرس وب‌سایت: [thepm.ir](https://thepm.ir)** | **مستندات: [quartz.jzhao.xyz](https://quartz.jzhao.xyz)**
+
+[![GitHub last commit](https://img.shields.io/github/last-commit/NarimanKhaleghi/blog?style=flat-square&label=آخرین+بروزرسانی&color=blue)](https://github.com/NarimanKhaleghi/blog/commits/main/)
+[![GitHub repo size](https://img.shields.io/github/repo-size/NarimanKhaleghi/blog?style=flat-square&label=حجم+مخزن&color=blue)](https://github.com/NarimanKhaleghi/blog)
+[![GitHub stars](https://img.shields.io/github/stars/NarimanKhaleghi/blog?style=flat-square&label=ستاره&color=yellow)](https://github.com/NarimanKhaleghi/blog/stargazers)
+[![GitHub license](https://img.shields.io/github/license/NarimanKhaleghi/blog?style=flat-square&label=مجوز&color=green)](https://github.com/NarimanKhaleghi/blog/blob/main/LICENSE)
+
+</div>
+
+<div dir="rtl">
+
+## 🧐 درباره این پروژه
+
+این مخزن، شامل **سورس کد و محتوای کامل وبلاگ شخصی من** است. این وبلاگ با استفاده از **[Quartz v5](https://quartz.jzhao.xyz/)** ساخته شده؛ ابزاری که به من امکان می‌دهد تا یادداشت‌ها و نوشته‌هایم را که در نرم‌افزار [Obsidian](https://obsidian.md/) مدیریت می‌شوند، به یک وب‌سایت ایستا و کاملاً کاربردی تبدیل کنم[reference:0].
+
+هدف من از ساخت این وبلاگ، ایجاد یک «باغ دیجیتال» (Digital Garden) است[reference:1]؛ مکانی برای به اشتراک‌گذاری ایده‌ها، تجربیات و دانش خودم در زمینه‌های مختلف. Quartz با قابلیت‌های بی‌نظیری مثل لینک‌دهی داخلی (Wikilinks)، نمایش گراف دانش و جستجوی متن کامل، این امکان را فراهم کرده است.
+
+<br>
+
+## ✨ ویژگی‌های کلیدی این وبلاگ
+
+- **سرعت بالا و بهینه**: وب‌سایت به صورت ایستا تولید می‌شود که باعث سرعت بسیار بالای بارگذاری صفحات می‌شود.
+- **ساختار به هم پیوسته**: نوشته‌ها از طریق لینک‌های داخلی به یکدیگر متصل شده و گراف دانش، این ارتباطات را به تصویر می‌کشد.
+- **جستجوی پیشرفته**: قابلیت جستجوی متن کامل در تمام محتوای وبلاگ، یافتن مطالب مورد نظر را آسان کرده است.
+- **طراحی واکنش‌گرا (Responsive)**: ظاهر وب‌سایت برای نمایش در تمام دستگاه‌ها (موبایل، تبلت و دسکتاپ) بهینه شده است.
+- **همگام‌سازی آسان با Obsidian**: پلاگین `Quartz Syncer` فرآیند انتشار مطالب را از طریق Obsidian بسیار ساده کرده است[reference:2].
+- **قابلیت نمایش کد و ریاضی**: پشتیبانی کامل از برجسته‌سازی سینتکس کدها و نمایش فرمول‌های ریاضی LaTeX.
+- **مدیریت برچسب‌ها و آرشیو**: سازماندهی مطالب از طریق برچسب‌ها و آرشیوهای زمانی.
+- **مطالب رمزگذاری شده**: قابلیت محافظت از محتوای خاص با رمز عبور.
+
+<br>
+
+## 🛠️ تکنولوژی‌های استفاده شده
+
+<div align="left">
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="SCSS"/>
+  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
+  <img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white" alt="Markdown"/>
+  <img src="https://img.shields.io/badge/Obsidian-483699?style=for-the-badge&logo=obsidian&logoColor=white" alt="Obsidian"/>
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions"/>
+</div>
+
+<br>
+
+## 📊 آمار مخزن و فعالیت
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=NarimanKhaleghi&show_icons=true&theme=dark&locale=fa&hide_border=true" alt="آمار گیت‌هاب" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NarimanKhaleghi&layout=compact&theme=dark&locale=fa&hide_border=true" alt="زبان‌های برتر" width="48%" />
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=NarimanKhaleghi&theme=dark&locale=fa&date_format=j%20M%5B%2C%20Y%5D&hide_border=true" alt="رکورد فعالیت" />
+</p>
+
+- **آخرین به‌روزرسانی**: به صورت خودکار در هر بار انتشار به‌روز می‌شود.
+- **زبان اصلی**: تایپ‌اسکریپت (بیش از ۷۱٪ پایگاه کد)[reference:3]
+- **چهارچوب‌های کلیدی**: React, Node.js
+- **مدیریت محتوا**: فایل‌های Markdown
+
+<br>
+
+## 🚀 راه‌اندازی اولیه (برای توسعه یا اجرای لوکال)
+
+اگر می‌خواهید این وبلاگ را روی سیستم خودتان اجرا کنید، مراحل زیر را دنبال کنید. این مراحل بر اساس مستندات رسمی Quartz است[reference:4].
+
+**پیش‌نیازها:**
+- نصب [Node.js](https://nodejs.org/) نسخه v18.14 یا بالاتر[reference:5]
+- یک حساب کاربری در [GitHub](https://github.com/)
+
+**مراحل:**
+
+1.  **کلون (Clone) کردن مخزن:**
+    ```bash
+    git clone https://github.com/NarimanKhaleghi/blog.git
+    cd blog
+    ```
+2. **نصب وابستگی‌ها:**
+    ```bash
+    npm install
+    ```
+3. **اجرا در محیط لوکال (برای مشاهده و تست):**
+    ```bash
+    npx quartz build --serve
+    ```
+    سپس آدرس http://localhost:8080 را در مرورگر خود باز کنید. با این دستور، یک سرور لوکال با قابلیت بارگذاری مجدد خودکار (live-reload) اجرا می‌شود.
+
+4. **تولید فایل‌های نهایی وب‌سایت:**
+    ```bash
+    npx quartz build
+    ```
+    فایل‌های استاتیک تولید شده در پوشه public/ قرار می‌گیرند.
+
+
+## 🔗 ارتباط با من
+
+    وب‌سایت: thepm.ir
+
+    گیت‌هاب: github.com/NarimanKhaleghi
+
+</div>
