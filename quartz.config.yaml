@@ -146,7 +146,7 @@ plugins:
       height: 630
       excludeRoot: "false"
       defaultDescription: description
-      defaultTitle: ogTitle
+      defaultTitle: title
   - source: github:quartz-community/cname
     enabled: true
   - source: github:quartz-community/canvas-page
