@@ -16,8 +16,8 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Vazirmatn
-      body: Vazirmatn
+      header: Oi
+      body: Baloo Bhaijaan 2
       code: IBM Plex Mono
     colors:
       lightMode:
