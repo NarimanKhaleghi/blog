@@ -9,10 +9,18 @@
 
 **آدرس وب‌سایت: [thepm.ir](https://thepm.ir)** | **مستندات: [quartz.jzhao.xyz](https://quartz.jzhao.xyz)**
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/NarimanKhaleghi/blog?style=flat-square&label=آخرین+بروزرسانی&color=blue)](https://github.com/NarimanKhaleghi/blog/commits/main/)
-[![GitHub repo size](https://img.shields.io/github/repo-size/NarimanKhaleghi/blog?style=flat-square&label=حجم+مخزن&color=blue)](https://github.com/NarimanKhaleghi/blog)
-[![GitHub stars](https://img.shields.io/github/stars/NarimanKhaleghi/blog?style=flat-square&label=ستاره&color=yellow)](https://github.com/NarimanKhaleghi/blog/stargazers)
-[![GitHub license](https://img.shields.io/github/license/NarimanKhaleghi/blog?style=flat-square&label=مجوز&color=green)](https://github.com/NarimanKhaleghi/blog/blob/main/LICENSE)
+
+## 🛠️ تکنولوژی‌های استفاده شده
+
+<div align="left">
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="SCSS"/>
+  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
+  <img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white" alt="Markdown"/>
+  <img src="https://img.shields.io/badge/Obsidian-483699?style=for-the-badge&logo=obsidian&logoColor=white" alt="Obsidian"/>
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions"/>
+</div>
 
 </div>
 
@@ -37,19 +45,6 @@
 - **مدیریت برچسب‌ها و آرشیو**: سازماندهی مطالب از طریق برچسب‌ها و آرشیوهای زمانی.
 - **مطالب رمزگذاری شده**: قابلیت محافظت از محتوای خاص با رمز عبور.
 
-<br>
-
-## 🛠️ تکنولوژی‌های استفاده شده
-
-<div align="left">
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
-  <img src="https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="SCSS"/>
-  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
-  <img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white" alt="Markdown"/>
-  <img src="https://img.shields.io/badge/Obsidian-483699?style=for-the-badge&logo=obsidian&logoColor=white" alt="Obsidian"/>
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions"/>
-</div>
 
 <br>
 
