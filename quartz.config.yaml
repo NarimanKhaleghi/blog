@@ -14,10 +14,10 @@ configuration:
     - .obsidian
   theme:
     fontOrigin: googleFonts
-    cdnCaching: false
+    cdnCaching: true
     typography:
-      header: Baloo Bhaijaan 2
-      body: Baloo Bhaijaan 2
+      header: Vazirmatn
+      body: Vazirmatn
       code: IBM Plex Mono
     colors:
       lightMode:
