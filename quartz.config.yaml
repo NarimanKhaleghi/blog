@@ -16,7 +16,7 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: false
     typography:
-      header: Cairo Play
+      header: Baloo Bhaijaan 2
       body: Baloo Bhaijaan 2
       code: IBM Plex Mono
     colors:
