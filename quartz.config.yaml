@@ -6,7 +6,7 @@ configuration:
   enablePopovers: true
   analytics:
     provider: plausible
-  locale: en-US
+  locale: fa-IR
   baseUrl: thepm.ir
   ignorePatterns:
     - private
