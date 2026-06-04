@@ -10,12 +10,12 @@ published: 2026-06-04
 tags:
   - tag1
   - tag2
-socialImage: cover.jpg
-socialDescription: توضیح برای اشتراک‌گذاری
 date: 2026-06-04
 updated: 2026-06-04
 unlisted: false
 password: ""
+socialImage:
+socialDescription:
 bibliography:
 ---
 
