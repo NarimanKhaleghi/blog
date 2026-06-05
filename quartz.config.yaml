@@ -233,7 +233,7 @@ plugins:
   - source: github:quartz-community/footer
     enabled: true
     options:
-      links: '{"GitHub":"https://github.com/NarimanKhaleghi","Telegram":"https://t.me/NarimanKhaleghi"}'
+      links: '{"GitHub":"https://github.com/NarimanKhaleghi"'
   - source: github:quartz-community/recent-notes
     enabled: true
   - source: github:quartz-community/spacer
