@@ -230,10 +230,6 @@ plugins:
     layout:
       position: afterBody
       priority: 10
-  - source: github:quartz-community/footer
-    enabled: false
-    options:
-      link: ""
   - source: github:quartz-community/recent-notes
     enabled: true
   - source: github:quartz-community/spacer
@@ -276,6 +272,13 @@ plugins:
       darkMode: auto
       exportPadding: 20
     order: 50
+  - source: github:quartz-community/footer
+    enabled: true
+    order: 50
+    options:
+      links:
+        GitHub: https://github.com/jackyzha0/quartz
+        Discord Community: https://discord.gg/cRFFHYye7t
 layout:
   groups:
     toolbar:
