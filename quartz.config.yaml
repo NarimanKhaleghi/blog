@@ -226,12 +226,7 @@ plugins:
     enabled: true
     options:
       provider: giscus
-      options: '{data-repo="NarimanKhaleghi/blog", data-repo-id="R_kgDOSwc8Hg",
-        data-category="General", data-category-id="DIC_kwDOSwc8Hs4C-pkX", data,
-        mapping="pathname",data-strict="1", data-reactions-enabled="0",
-        data-emit-metadata="1", data-input-position="top",
-        data-theme="dark_high_contrast", data-lang="fa", data-loading="lazy",
-        crossorigin="anonymous"}'
+      options: "{}"
     layout:
       position: afterBody
       priority: 10
