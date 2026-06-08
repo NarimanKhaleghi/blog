@@ -104,15 +104,12 @@ article.popover-hint,
 .left {
     /* کپی کامل از استایل .page-header (بدون position, top, margin-bottom) */
     z-index: 100;
-    border-radius: 2rem;
+    border-radius: 1rem;
     
     /* لایت مود */
     background-color: #00000010;
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border: 1px solid #00000015;
-    box-shadow: 0 8px 32px #00000020;
-    transition: background-color 0.3s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* دارک مود برای همین بخش‌ها */
@@ -123,32 +120,39 @@ article.popover-hint,
     background-color: #ffffff10;
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border: 1px solid #ffffff15;
-    box-shadow: 0 8px 32px #ffffff20;
 }
 
 /* ============================= */
 /* Footerها (دقیقاً مشابه ولی بدون margin-bottom و با کمی فاصله از پایین) */
-.page-footer,
-#quartz-body > footer:nth-child(4) {
+.page-footer {
     z-index: 100;
-    border-radius: 2rem;       /* فاصله از محتوای بالا - اختیاری */
-    
+    border-radius: 1rem;       /* فاصله از محتوای بالا - اختیاری */
+    padding: 1rem;
+
     background-color: #00000010;
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border: 1px solid #00000015;
-    box-shadow: 0 8px 32px #00000020;
-    transition: background-color 0.3s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.theme-dark .page-footer,
+#quartz-body > footer:nth-child(4) {
+    z-index: 100;
+    border-radius: 1rem;       /* فاصله از محتوای بالا - اختیاری */
+
+    background-color: #00000010;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+.theme-dark .page-footer {
+    background-color: #ffffff10;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
 .theme-dark #quartz-body > footer:nth-child(4) {
     background-color: #ffffff10;
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border: 1px solid #ffffff15;
-    box-shadow: 0 8px 32px #ffffff20;
 }
 
 /* Fallback برای مرورگرهای بدون backdrop-filter (برای همه selectorهای بالا) */
@@ -165,6 +169,20 @@ article.popover-hint,
     .theme-dark .left,
     .theme-dark .page-header,
     .theme-dark .page-footer,
+    .theme-dark #quartz-body > footer:nth-child(4) {
+        background-color: var(--bg-elevated);
+        border: 1px solid var(--border-light);
+    }
+}
+
+@supports not (backdrop-filter: blur(20px)) {
+
+    #quartz-body > footer:nth-child(4) {
+        background-color: var(--bg-elevated);
+        border: 1px solid var(--border-light);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
     .theme-dark #quartz-body > footer:nth-child(4) {
         background-color: var(--bg-elevated);
         border: 1px solid var(--border-light);

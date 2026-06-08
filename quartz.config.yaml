@@ -226,7 +226,19 @@ plugins:
     enabled: true
     options:
       provider: giscus
-      options: "{}"
+      options:
+        repo: NarimanKhaleghi/blog
+        repoId: R_kgDOSwc8Hg
+        category: General
+        categoryId: DIC_kwDOSwc8Hs4C-pkX
+        lang: fa
+        mapping: pathname
+        strict: true
+        reactionsEnabled: true
+        inputPosition: top
+        themeUrl: https://thepm.ir/static/giscus/
+        darkTheme: dark
+        lightTheme: light
     layout:
       position: afterBody
       priority: 10
