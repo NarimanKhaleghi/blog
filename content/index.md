@@ -1,23 +1,14 @@
 ---
 publish: true
-aliases:
-  - نام مستعار
-title: عنوان اصلی صفحه
-description: توضیح مختصر برای SEO
+title: صفحه اصلی
 created: 2026-06-04
 modified: 2026-06-04
 published: 2026-06-04
-tags:
-  - tag1
-  - tag2
+socialImage: 4. Publish/images/home.png
+socialDescription: صفحه اصلی باغچه دیجیتال من | نریمان خالقی
 date: 2026-06-04
 updated: 2026-06-04
 unlisted: false
-password: ""
-socialImage:
-socialDescription:
-bibliography:
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+این اولین صفحه وبلاگ است
