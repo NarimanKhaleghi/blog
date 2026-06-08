@@ -9,6 +9,7 @@ configuration:
   locale: fa-IR
   baseUrl: thepm.ir
   ignorePatterns:
+    - images
     - private
     - templates
     - .obsidian
