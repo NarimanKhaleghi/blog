@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
   pageTitle: The PM
-  pageTitleSuffix: "| Nariman Khaleghi"
+  pageTitleSuffix: "| The PM"
   enableSPA: true
   enablePopovers: true
   analytics:
