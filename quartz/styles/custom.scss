@@ -209,76 +209,74 @@ a.internal.tag-link {
     text-align: center;
 }
 
-/* ============================================
-   رفع نهایی Explorer در موبایل (Quartz 5)
-   ============================================ */
-
-/* فقط در موبایل (عرض کمتر از 800px) */
+/* ===============================================
+   ریاستایل Explorer در موبایل: راست‌لغز، بدون پشت‌زمینه و حاشیه
+   =============================================== */
 @media (max-width: 800px) {
-  
-  /* 1. دکمه همبرگری را همیشه نمایش بده و موقعیتش را ثابت کن */
+  /* 1. دکمه همبرگری را به گوشه راست هدر می‌بریم */
   .explorer-toggle.mobile-explorer {
-    display: flex !important;
     position: fixed;
     top: 0.8rem;
-    left: 0.8rem;
+    right: 0.8rem;    /* چپ → راست */
+    left: auto;
     z-index: 1001;
-    background: var(--bg-elevated, #ffffff);
-    border: 1px solid var(--border-light, #e0e0e0);
-    border-radius: 8px;
+    background: transparent !important;   /* بدون بک‌گراند */
+    border: none !important;              /* بدون حاشیه */
+    box-shadow: none;
     padding: 0.5rem;
     cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    display: flex !important;
   }
-  
-  /* 2. محتوای explorer را به صورت یک سایدبار کشویی از چپ درآور */
+
+  /* 2. منوی Explorer را از راست صفحه وارد می‌کنیم (نه از چپ) */
   .explorer .explorer-content {
     position: fixed !important;
     top: 0;
-    left: 0;
+    right: 0;          /* راست، نه چپ */
     bottom: 0;
+    left: auto;
     width: 280px;
     max-width: 85vw;
-    background: var(--bg-primary, #ffffff);
+    background: transparent !important;   /* شفاف، بدون پشت‌زمینه */
+    backdrop-filter: none !important;     /* حذف افکت شیشه‌ای */
+    border: none !important;              /* بدون حاشیه */
+    box-shadow: none !important;
     z-index: 1000;
     overflow-y: auto;
-    transform: translateX(-100%);
+    transform: translateX(100%);          /* خارج از صفحه در راست */
     transition: transform 0.3s ease;
     padding-top: 4rem;
-    box-shadow: none;
-    display: block !important; /* override هر display دیگه‌ای */
   }
-  
-  /* 3. وقتی explorer باز است (کلاس collapsed حذف شده) */
+
+  /* 3. وقتی منو باز است (کلاس collapsed روی .explorer حذف شود) */
   .explorer:not(.collapsed) .explorer-content {
-    transform: translateX(0);
-    box-shadow: 2px 0 10px rgba(0,0,0,0.15);
+    transform: translateX(0);              /* به داخل می‌آید */
   }
-  
-  /* 4. وقتی منو باز است، بدنه را از اسکرول قفل کن */
-  body:has(.explorer:not(.collapsed)) {
-    overflow: hidden;
+
+  /* 4. در حالت بسته، هیچ فضایی اشغال نشود و دیده نشود */
+  .explorer.collapsed .explorer-content {
+    transform: translateX(100%);
+    display: block !important; /* اطمینان از مخفی شدن */
   }
-  
-  /* 5. حذف نوار شفاف مزاحم (Issue #906) */
+
+  /* 5. حذف نوار شفاف اضافی (Issue #906) */
   .explorer .explorer-content .overflow::after {
     background: none !important;
   }
-  
-  /* 6. اطمینان از اینکه در حالت بسته، هیچ فضای اضافی اشغال نشود */
-  .explorer.collapsed .explorer-content {
-    transform: translateX(-100%);
-    box-shadow: none;
+
+  /* 6. وقتی منو باز است، قفل اسکرول بدنه */
+  body:has(.explorer:not(.collapsed)) {
+    overflow: hidden;
   }
-  
-  /* 7. تنظیم لایه‌بندی برای جلوگیری از همپوشانی با بقیه محتوا */
-  .sidebar.left:has(.explorer) {
+
+  /* 7. اطمینان از اینکه سایدبار چپ (اگر وجود دارد) مزاحمت ایجاد نکند */
+  .sidebar.left {
     overflow: visible !important;
   }
-  
-  /* 8. ریست margin صفحه اصلی برای جلوگیری از جابجایی */
+
+  /* 8. جابجایی محتوای اصلی به خاطر دکمه راست (اختیاری) */
   .page {
     margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
-
