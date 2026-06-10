@@ -209,6 +209,76 @@ a.internal.tag-link {
     text-align: center;
 }
 
-.explorer .explorer-content .overflow::after {
+/* ============================================
+   رفع نهایی Explorer در موبایل (Quartz 5)
+   ============================================ */
+
+/* فقط در موبایل (عرض کمتر از 800px) */
+@media (max-width: 800px) {
+  
+  /* 1. دکمه همبرگری را همیشه نمایش بده و موقعیتش را ثابت کن */
+  .explorer-toggle.mobile-explorer {
+    display: flex !important;
+    position: fixed;
+    top: 0.8rem;
+    left: 0.8rem;
+    z-index: 1001;
+    background: var(--bg-elevated, #ffffff);
+    border: 1px solid var(--border-light, #e0e0e0);
+    border-radius: 8px;
+    padding: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  /* 2. محتوای explorer را به صورت یک سایدبار کشویی از چپ درآور */
+  .explorer .explorer-content {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    max-width: 85vw;
+    background: var(--bg-primary, #ffffff);
+    z-index: 1000;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    padding-top: 4rem;
+    box-shadow: none;
+    display: block !important; /* override هر display دیگه‌ای */
+  }
+  
+  /* 3. وقتی explorer باز است (کلاس collapsed حذف شده) */
+  .explorer:not(.collapsed) .explorer-content {
+    transform: translateX(0);
+    box-shadow: 2px 0 10px rgba(0,0,0,0.15);
+  }
+  
+  /* 4. وقتی منو باز است، بدنه را از اسکرول قفل کن */
+  body:has(.explorer:not(.collapsed)) {
+    overflow: hidden;
+  }
+  
+  /* 5. حذف نوار شفاف مزاحم (Issue #906) */
+  .explorer .explorer-content .overflow::after {
     background: none !important;
+  }
+  
+  /* 6. اطمینان از اینکه در حالت بسته، هیچ فضای اضافی اشغال نشود */
+  .explorer.collapsed .explorer-content {
+    transform: translateX(-100%);
+    box-shadow: none;
+  }
+  
+  /* 7. تنظیم لایه‌بندی برای جلوگیری از همپوشانی با بقیه محتوا */
+  .sidebar.left:has(.explorer) {
+    overflow: visible !important;
+  }
+  
+  /* 8. ریست margin صفحه اصلی برای جلوگیری از جابجایی */
+  .page {
+    margin-left: 0 !important;
+  }
 }
+
