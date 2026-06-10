@@ -1,12 +1,12 @@
 ---
 publish: true
-title: نمونه تستیار خوب LLMها، MCP
-created: 0001-01-01
-modified: 0001-01-01
-published: 0001-01-01
+title: زبون مشترکی به نام MCP یار خوب LLMها
+created: 1405-03-20
+modified: 1405-03-20
+published: 1405-03-20
 socialDescription: توضیحاتی در زمینه اینکه MCP ها چی هستند و چه کمکی به ما میکنند
-date: 0001-01-01
-updated: 0001-01-01
+date: 1405-03-20
+updated: 1405-03-20
 unlisted: false
 ---
 
