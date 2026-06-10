@@ -247,6 +247,11 @@ plugins:
       priority: 10
   - source: github:quartz-community/recent-notes
     enabled: true
+    options:
+      title: نوشته های اخیر
+      limit: 10
+      linkToMore: "true"
+      showTags: "true"
   - source: github:quartz-community/spacer
     enabled: true
     options: {}
