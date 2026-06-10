@@ -126,7 +126,7 @@ plugins:
       unlistWhenEncrypted: false
       outputPath: static/encryptedContentIndex.json
   - source: github:quartz-community/stacked-pages
-    enabled: true
+    enabled: false
     layout:
       position: afterBody
       priority: 50
@@ -214,13 +214,13 @@ plugins:
       priority: 30
       group: toolbar
   - source: github:quartz-community/reader-mode
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 35
       group: toolbar
   - source: github:quartz-community/breadcrumbs
-    enabled: true
+    enabled: false
     layout:
       position: beforeBody
       priority: 5
@@ -246,9 +246,9 @@ plugins:
       position: afterBody
       priority: 10
   - source: github:quartz-community/recent-notes
-    enabled: true
+    enabled: false
   - source: github:quartz-community/spacer
-    enabled: true
+    enabled: false
     options: {}
     order: 25
     layout:
@@ -256,7 +256,7 @@ plugins:
       priority: 25
       display: mobile-only
   - source: github:quartz-community/bases-page
-    enabled: true
+    enabled: false
     options: {}
     order: 50
   - source: github:quartz-community/note-properties
@@ -277,25 +277,25 @@ plugins:
       priority: 15
       display: all
   - source: github:Requiae/quartz-leaflet-bases-plugin
-    enabled: true
+    enabled: false
     options:
       enableCopyTool: false
   - source: github:quartz-community/obsidian-plugin-excalidraw
-    enabled: true
+    enabled: false
     options:
       enableInteraction: true
       darkMode: auto
       exportPadding: 20
     order: 50
   - source: github:quartz-community/footer
-    enabled: true
+    enabled: false
     order: 50
     options:
       links:
         GitHub: https://github.com/jackyzha0/quartz
         Discord Community: https://discord.gg/cRFFHYye7t
   - source: github:quartz-community/obsidian-plugin-ttrpg-tools-maps
-    enabled: true
+    enabled: false
     order: 50
     options:
       blockLanguage: zoommap
@@ -303,7 +303,7 @@ plugins:
       maxInlineDataBytes: 0
       defaultIconKey: pin-red
   - source: github:quartz-community/obsidian-plugin-leaflet
-    enabled: true
+    enabled: false
     order: 50
     options: {}
 layout:
