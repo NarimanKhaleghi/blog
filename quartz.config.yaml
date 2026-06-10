@@ -123,10 +123,10 @@ plugins:
     options:
       iterations: 600000
       passwordField: password
-      unlistWhenEncrypted: false
+      unlistWhenEncrypted: true
       outputPath: static/encryptedContentIndex.json
   - source: github:quartz-community/stacked-pages
-    enabled: false
+    enabled: true
     layout:
       position: afterBody
       priority: 50
@@ -214,13 +214,13 @@ plugins:
       priority: 30
       group: toolbar
   - source: github:quartz-community/reader-mode
-    enabled: false
+    enabled: true
     layout:
       position: left
       priority: 35
       group: toolbar
   - source: github:quartz-community/breadcrumbs
-    enabled: false
+    enabled: true
     layout:
       position: beforeBody
       priority: 5
@@ -246,9 +246,9 @@ plugins:
       position: afterBody
       priority: 10
   - source: github:quartz-community/recent-notes
-    enabled: false
+    enabled: true
   - source: github:quartz-community/spacer
-    enabled: false
+    enabled: true
     options: {}
     order: 25
     layout:
@@ -256,19 +256,19 @@ plugins:
       priority: 25
       display: mobile-only
   - source: github:quartz-community/bases-page
-    enabled: false
+    enabled: true
     options: {}
     order: 50
   - source: github:quartz-community/note-properties
     enabled: true
     options:
-      includeAll: false
+      includeAll: true
       includedProperties:
         - description
         - tags
         - aliases
       excludedProperties: []
-      hidePropertiesView: false
+      hidePropertiesView: true
       delimiters: ---
       language: yaml
     order: 5
@@ -277,25 +277,25 @@ plugins:
       priority: 15
       display: all
   - source: github:Requiae/quartz-leaflet-bases-plugin
-    enabled: false
+    enabled: true
     options:
-      enableCopyTool: false
+      enableCopyTool: true
   - source: github:quartz-community/obsidian-plugin-excalidraw
-    enabled: false
+    enabled: true
     options:
       enableInteraction: true
       darkMode: auto
       exportPadding: 20
     order: 50
   - source: github:quartz-community/footer
-    enabled: false
+    enabled: true
     order: 50
     options:
       links:
         GitHub: https://github.com/jackyzha0/quartz
         Discord Community: https://discord.gg/cRFFHYye7t
   - source: github:quartz-community/obsidian-plugin-ttrpg-tools-maps
-    enabled: false
+    enabled: true
     order: 50
     options:
       blockLanguage: zoommap
@@ -303,7 +303,7 @@ plugins:
       maxInlineDataBytes: 0
       defaultIconKey: pin-red
   - source: github:quartz-community/obsidian-plugin-leaflet
-    enabled: false
+    enabled: true
     order: 50
     options: {}
 layout:
