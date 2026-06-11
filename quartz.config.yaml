@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: The PM
-  pageTitleSuffix: "| The PM"
+  pageTitle: دِ پی اِم
+  pageTitleSuffix: "|دِ پی اِم"
   enableSPA: true
   enablePopovers: true
   analytics:
@@ -25,12 +25,12 @@ configuration:
         light: "#FFFFFF"           # --bg-primary
         lightgray: "#000000"       # --border-light
         gray: "#000000"            # --border-medium (مقدار میانی)
-        darkgray: "#00000"        # --text-body
-        dark: "#00000"            # --text-heading
+        darkgray: "#000000"        # --text-body
+        dark: "#000000"            # --text-heading
         secondary: "#5D9C5B"       # --color-link
         tertiary: "#2962A0"        # --color-hover
-        highlight: "#0000015"   # --color-highlight-bg
-        textHighlight: "#0000015" # --color-mark
+        highlight: "#00000015"   # --color-highlight-bg
+        textHighlight: "#00000015" # --color-mark
       darkMode:
         light: "#000000"           # --bg-primary
         lightgray: "#FFFFFF"       # --border-light
