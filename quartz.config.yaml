@@ -22,25 +22,25 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#FFFFFF"           # --bg-primary
-        lightgray: "#E5E5E5"       # --border-light
-        gray: "#CCCCCC"            # --border-medium (مقدار میانی)
-        darkgray: "#111111"        # --text-body
-        dark: "#111111"            # --text-heading
-        secondary: "#000000"       # --color-link
-        tertiary: "#333333"        # --color-hover
-        highlight: "rgba(0, 0, 0, 0.08)"   # --color-highlight-bg
-        textHighlight: "rgba(0, 0, 0, 0.12)" # --color-mark
+        light: "#FFFFFF"          # --color-canvas-default
+        lightgray: "#F6F8FA"      # --color-canvas-subtle
+        gray: "#D0D7DE"           # --color-border-default
+        darkgray: "#656D76"       # --color-fg-muted
+        dark: "#1F2328"           # --color-fg-default
+        secondary: "#0969DA"      # --color-accent-fg
+        tertiary: "#DDF4FF"       # --color-accent-subtle
+        highlight: "rgba(84, 174, 255, 0.4)" # --color-accent-muted
+        textHighlight: "#FFF8C5"  # --color-attention-subtle
       darkMode:
-        light: "#000000"           # --bg-primary
-        lightgray: "#333333"       # --border-light
-        gray: "#555555"            # --border-medium
-        darkgray: "#E0E0E0"        # --text-body
-        dark: "#FFFFFF"            # --text-heading
-        secondary: "#FFFFFF"       # --color-link
-        tertiary: "#CCCCCC"        # --color-hover
-        highlight: "rgba(255, 255, 255, 0.08)"   # --color-highlight-bg
-        textHighlight: "rgba(255, 255, 255, 0.12)" # --color-mark
+        light: "#0D1117"          # --color-canvas-default
+        lightgray: "#161B22"      # --color-canvas-subtle
+        gray: "#30363D"           # --color-border-default
+        darkgray: "#8D96A0"       # --color-fg-muted
+        dark: "#E6EDF3"           # --color-fg-default
+        secondary: "#4493F8"      # --color-accent-fg
+        tertiary: "rgba(68, 147, 248, 0.15)" # --color-accent-subtle
+        highlight: "rgba(68, 147, 248, 0.4)" # --color-accent-muted
+        textHighlight: "#311F02"  # --color-attention-subtle
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
