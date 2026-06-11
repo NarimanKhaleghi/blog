@@ -22,25 +22,25 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#ffffff"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#000000"
-        dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#fff23688"
+        light: "#FFFFFF"           # --bg-primary
+        lightgray: "#E5E5E5"       # --border-light
+        gray: "#CCCCCC"            # --border-medium (مقدار میانی)
+        darkgray: "#111111"        # --text-body
+        dark: "#111111"            # --text-heading
+        secondary: "#000000"       # --color-link
+        tertiary: "#333333"        # --color-hover
+        highlight: "rgba(0, 0, 0, 0.08)"   # --color-highlight-bg
+        textHighlight: "rgba(0, 0, 0, 0.12)" # --color-mark
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#ffffff"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#000000"           # --bg-primary
+        lightgray: "#333333"       # --border-light
+        gray: "#555555"            # --border-medium
+        darkgray: "#E0E0E0"        # --text-body
+        dark: "#FFFFFF"            # --text-heading
+        secondary: "#FFFFFF"       # --color-link
+        tertiary: "#CCCCCC"        # --color-hover
+        highlight: "rgba(255, 255, 255, 0.08)"   # --color-highlight-bg
+        textHighlight: "rgba(255, 255, 255, 0.12)" # --color-mark
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
@@ -247,11 +247,6 @@ plugins:
       priority: 10
   - source: github:quartz-community/recent-notes
     enabled: true
-    options:
-      title: نوشته های اخیر
-      limit: 10
-      linkToMore: "true"
-      showTags: "true"
   - source: github:quartz-community/spacer
     enabled: true
     options: {}
