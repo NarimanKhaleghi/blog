@@ -148,7 +148,7 @@ plugins:
       width: 1200
       height: 630
       excludeRoot: "true"
-      defaultDescription: description
+      defaultDescription: socialDescription
       defaultTitle: title
   - source: github:quartz-community/cname
     enabled: true
