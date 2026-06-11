@@ -22,25 +22,25 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#FFFFFF"          # --color-canvas-default
-        lightgray: "#F6F8FA"      # --color-canvas-subtle
-        gray: "#D0D7DE"           # --color-border-default
-        darkgray: "#656D76"       # --color-fg-muted
-        dark: "#1F2328"           # --color-fg-default
-        secondary: "#0969DA"      # --color-accent-fg
-        tertiary: "#DDF4FF"       # --color-accent-subtle
-        highlight: "rgba(84, 174, 255, 0.4)" # --color-accent-muted
-        textHighlight: "#FFF8C5"  # --color-attention-subtle
+        light: "#FFFFFF"           # --bg-primary
+        lightgray: "#000000"       # --border-light
+        gray: "#000000"            # --border-medium (مقدار میانی)
+        darkgray: "#00000"        # --text-body
+        dark: "#00000"            # --text-heading
+        secondary: "#5D9C5B"       # --color-link
+        tertiary: "#2962A0"        # --color-hover
+        highlight: "#0000015"   # --color-highlight-bg
+        textHighlight: "#0000015" # --color-mark
       darkMode:
-        light: "#0D1117"          # --color-canvas-default
-        lightgray: "#161B22"      # --color-canvas-subtle
-        gray: "#30363D"           # --color-border-default
-        darkgray: "#8D96A0"       # --color-fg-muted
-        dark: "#E6EDF3"           # --color-fg-default
-        secondary: "#4493F8"      # --color-accent-fg
-        tertiary: "rgba(68, 147, 248, 0.15)" # --color-accent-subtle
-        highlight: "rgba(68, 147, 248, 0.4)" # --color-accent-muted
-        textHighlight: "#311F02"  # --color-attention-subtle
+        light: "#000000"           # --bg-primary
+        lightgray: "#FFFFFF"       # --border-light
+        gray: "#FFFFFF"            # --border-medium
+        darkgray: "#FFFFFF"        # --text-body
+        dark: "#FFFFFF"            # --text-heading
+        secondary: "#5D9C5B"       # --color-link
+        tertiary: "#2962A0"        # --color-hover
+        highlight: "#FFFFFF15"   # --color-highlight-bg
+        textHighlight: "#FFFFFF15" # --color-mark
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
@@ -126,7 +126,7 @@ plugins:
       unlistWhenEncrypted: true
       outputPath: static/encryptedContentIndex.json
   - source: github:quartz-community/stacked-pages
-    enabled: true
+    enabled: false
     layout:
       position: afterBody
       priority: 50

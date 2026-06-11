@@ -1,48 +1,6 @@
 @use "./variables.scss" as *;
 @use "./syncer";
 
-
-
-/* ============================================
-   اعمال رنگ‌ها به المان‌های عمومی (بدون تغییر در منطق)
-   ============================================ */
-body {
-    background-color: var(--bg-primary);
-    color: var(--text-body);
-    transition: background-color 0.3s ease, color 0.2s ease;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: var(--text-heading);
-}
-
-a {
-    color: var(--color-link);
-    transition: color 0.2s;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-}
-
-a:hover {
-    color: var(--color-hover);
-}
-
-/* حاشیه‌ها */
-hr, .border, .divider {
-    border-color: var(--border-light);
-}
-
-/* هایلایت داخلی */
-.internal-link-bg {
-    background-color: var(--color-highlight-bg);
-}
-
-/* متن علامت‌گذاری شده */
-mark {
-    background-color: var(--color-mark);
-    color: inherit;
-}
-
 /* ============================================
    Apple-style Glassmorphism for other sections
    ============================================ */
@@ -59,7 +17,7 @@ article.popover-hint,
     border-radius: 1rem;
     
     /* لایت مود */
-    background-color: #00000010;
+    background-color: #00000015;
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
 }
@@ -70,7 +28,7 @@ article.popover-hint,
 .theme-dark .right,
 .theme-dark article.popover-hint,
 .theme-dark .left {
-    background-color: #ffffff10;
+    background-color: #ffffff15;
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
 }
@@ -78,32 +36,32 @@ article.popover-hint,
 /* ============================= */
 /* Footerها (دقیقاً مشابه ولی بدون margin-bottom و با کمی فاصله از پایین) */
 .page-footer {
-    z-index: 100;
+    z-index: 0;
     border-radius: 1rem;       /* فاصله از محتوای بالا - اختیاری */
     padding: 1rem;
 
-    background-color: #00000010;
+    background-color: #00000015;
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
 }
 
 #quartz-body > footer:nth-child(4) {
-    z-index: 100;
+    z-index: 0;
     border-radius: 1rem;       /* فاصله از محتوای بالا - اختیاری */
 
-    background-color: #00000010;
+    background-color: #00000015;
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
 }
 
 .theme-dark .page-footer {
-    background-color: #ffffff10;
+    background-color: #ffffff15;
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
 }
 
 .theme-dark #quartz-body > footer:nth-child(4) {
-    background-color: #ffffff10;
+    background-color: #ffffff15;
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
 }
@@ -171,3 +129,64 @@ a.internal.tag-link {
     margin: 0;
 }
 
+
+/* component-53b25b2b.css | http://localhost:8080/component-53b25b2b.css */
+
+@layer quartz-base {
+  .page-title {
+    /* font-size: 1.75rem; */
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+/* index.css | http://localhost:8080/index.css */
+
+.explorer-content {
+  /* padding-right: 3rem; */
+}
+
+@layer quartz-base {
+  tbody, li, p {
+    text-align: justify;
+    padding-top: 0.5rem;
+  }
+  .page > #quartz-body .page-header {
+    /* margin: 6rem 0 0; */
+    margin: 3rem 0 0;
+  }
+}
+
+article.popover-hint {
+  /* margin-top: .3rem; */
+  /* padding: 1rem; */
+  margin-top: 3rem;
+  padding: 0.1rem 1rem;
+}
+
+/* component-1ea6ad18.css | http://localhost:8080/component-1ea6ad18.css */
+
+@layer quartz-base {
+  li:has(> .folder-outer:not(.open)) > .folder-container > svg {
+    /* transform: rotate(-90deg); */
+    transform: rotate(90deg);
+  }
+  .explorer.collapsed .fold {
+    /* transform: rotate(-90deg); */
+    transform: rotate(90deg);
+  }
+}
+
+/* component-788c9ca3.css | http://localhost:8080/component-788c9ca3.css */
+
+@layer quartz-base {
+  button.toc-header.collapsed .fold {
+    /* transform: rotate(-90deg); */
+    transform: rotate(90deg);
+  }
+  ul.toc-content.overflow .depth-1 {
+    /* padding-left: 1rem; */
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+  }
+}
