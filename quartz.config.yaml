@@ -9,7 +9,6 @@ configuration:
   locale: fa-IR
   baseUrl: thepm.ir
   ignorePatterns:
-    - images
     - private
     - templates
     - .obsidian
@@ -22,25 +21,25 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#FFFFFF"           # --bg-primary
-        lightgray: "#000000"       # --border-light
-        gray: "#000000"            # --border-medium (مقدار میانی)
-        darkgray: "#000000"        # --text-body
-        dark: "#000000"            # --text-heading
-        secondary: "#5D9C5B"       # --color-link
-        tertiary: "#2962A0"        # --color-hover
-        highlight: "#00000015"   # --color-highlight-bg
-        textHighlight: "#00000015" # --color-mark
+        light: "#FFFFFF"
+        lightgray: "#000000"
+        gray: "#000000"
+        darkgray: "#000000"
+        dark: "#000000"
+        secondary: "#5D9C5B"
+        tertiary: "#2962A0"
+        highlight: "#00000015"
+        textHighlight: "#00000015"
       darkMode:
-        light: "#000000"           # --bg-primary
-        lightgray: "#FFFFFF"       # --border-light
-        gray: "#FFFFFF"            # --border-medium
-        darkgray: "#FFFFFF"        # --text-body
-        dark: "#FFFFFF"            # --text-heading
-        secondary: "#5D9C5B"       # --color-link
-        tertiary: "#2962A0"        # --color-hover
-        highlight: "#FFFFFF15"   # --color-highlight-bg
-        textHighlight: "#FFFFFF15" # --color-mark
+        light: "#000000"
+        lightgray: "#FFFFFF"
+        gray: "#FFFFFF"
+        darkgray: "#FFFFFF"
+        dark: "#FFFFFF"
+        secondary: "#5D9C5B"
+        tertiary: "#2962A0"
+        highlight: "#FFFFFF15"
+        textHighlight: "#FFFFFF15"
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
