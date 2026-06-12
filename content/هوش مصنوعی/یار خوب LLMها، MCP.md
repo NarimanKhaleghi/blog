@@ -1,12 +1,12 @@
 ---
 publish: true
 title: زبون مشترکی به نام MCP یار خوب LLMها
-created: 1405-03-20
-modified: 1405-03-20
-published: 1405-03-20
+created: 2026-06-10
+modified: 2026-06-10
+published: 2026-06-10
 socialDescription: توضیحاتی در زمینه اینکه MCP ها چی هستند و چه کمکی به ما میکنند
-date: 1405-03-20
-updated: 1405-03-20
+date: 2026-06-10
+updated: 2026-06-10
 unlisted: false
 ---
 

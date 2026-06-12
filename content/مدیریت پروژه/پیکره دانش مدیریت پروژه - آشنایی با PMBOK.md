@@ -1,12 +1,12 @@
 ---
 publish: true
 title: پیکره دانش مدیریت پروژه - آشنایی با PMBOK
-created: 1405-03-19
-modified: 1405-03-19
-published: 1405-03-19
+created: 2026-06-08
+modified: 2026-06-08
+published: 2026-06-08
 socialDescription: PMBOK آشنایی اولیه با پیکره دانش مدیریت پروژه
-date: 1405-03-19
-updated: 1405-03-19
+date: 2026-06-08
+updated: 2026-06-08
 unlisted: false
 ---
 
