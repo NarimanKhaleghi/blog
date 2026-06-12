@@ -14,7 +14,7 @@ configuration:
     - .obsidian
   theme:
     fontOrigin: googleFonts
-    cdnCaching: false
+    cdnCaching: true
     typography:
       header: Vazirmatn
       body: Vazirmatn
@@ -87,53 +87,19 @@ plugins:
     enabled: true
     options:
       markdownLinkResolution: shortest
-      lazyLoad: true
-      openLinksInNewTab: true
     order: 60
   - source: github:quartz-community/description
     enabled: true
     order: 70
-  - source: github:quartz-community/latex
-    enabled: false
-    options:
-      renderEngine: katex
-    order: 80
-  - source: github:quartz-community/citations
-    enabled: false
-    order: 85
   - source: github:quartz-community/hard-line-breaks
     enabled: true
     order: 90
-  - source: github:quartz-community/ox-hugo
-    enabled: false
-    order: 91
-  - source: github:quartz-community/roam
-    enabled: false
-    order: 92
-  - source: github:quartz-community/remove-draft
-    enabled: false
-    options: {}
   - source: github:quartz-community/explicit-publish
     enabled: true
   - source: github:quartz-community/unlisted-pages
     enabled: true
     options: {}
     order: 45
-  - source: github:quartz-community/encrypted-pages
-    enabled: false
-    options:
-      iterations: 600000
-      passwordField: password
-      unlistWhenEncrypted: true
-      outputPath: static/encryptedContentIndex.json
-  - source: github:quartz-community/stacked-pages
-    enabled: false
-    layout:
-      position: afterBody
-      priority: 50
-      display: all
-  - source: github:quartz-community/alias-redirects
-    enabled: false
   - source: github:quartz-community/content-index
     enabled: true
     options:
@@ -153,8 +119,6 @@ plugins:
       defaultTitle: title
   - source: github:quartz-community/cname
     enabled: true
-  - source: github:quartz-community/canvas-page
-    enabled: false
   - source: github:quartz-community/content-page
     enabled: true
   - source: github:quartz-community/folder-page
@@ -169,8 +133,6 @@ plugins:
       display: all
   - source: github:quartz-community/graph
     enabled: true
-    options:
-      loading: lazy
     layout:
       position: right
       priority: 10
@@ -182,11 +144,6 @@ plugins:
       group: toolbar
       groupOptions:
         grow: true
-  - source: github:quartz-community/backlinks
-    enabled: false
-    layout:
-      position: right
-      priority: 50
   - source: github:quartz-community/article-title
     enabled: true
     layout:
@@ -216,12 +173,6 @@ plugins:
       position: left
       priority: 30
       group: toolbar
-  - source: github:quartz-community/reader-mode
-    enabled: false
-    layout:
-      position: left
-      priority: 35
-      group: toolbar
   - source: github:quartz-community/breadcrumbs
     enabled: true
     layout:
@@ -242,15 +193,14 @@ plugins:
         strict: true
         reactionsEnabled: true
         inputPosition: top
-        loading: lazy
+        themeUrl: https://thepm.ir/static/giscus/
+        darkTheme: dark
+        lightTheme: light
     layout:
       position: afterBody
       priority: 10
   - source: github:quartz-community/recent-notes
-    enabled: false
-    layout:
-      position: right
-      priority: 50
+    enabled: true
   - source: github:quartz-community/spacer
     enabled: true
     options: {}
@@ -260,7 +210,7 @@ plugins:
       priority: 25
       display: mobile-only
   - source: github:quartz-community/bases-page
-    enabled: false
+    enabled: true
     options: {}
     order: 50
   - source: github:quartz-community/note-properties
@@ -280,17 +230,6 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
-  - source: github:Requiae/quartz-leaflet-bases-plugin
-    enabled: false
-    options:
-      enableCopyTool: true
-  - source: github:quartz-community/obsidian-plugin-excalidraw
-    enabled: false
-    options:
-      enableInteraction: true
-      darkMode: auto
-      exportPadding: 20
-    order: 50
   - source: github:quartz-community/footer
     enabled: true
     order: 50
@@ -299,17 +238,13 @@ plugins:
         GitHub: https://github.com/jackyzha0/quartz
         Discord Community: https://discord.gg/cRFFHYye7t
   - source: github:quartz-community/obsidian-plugin-ttrpg-tools-maps
-    enabled: false
+    enabled: true
     order: 50
     options:
       blockLanguage: zoommap
       inlineBlockHeaderId: ZOOMMAP-DATA
       maxInlineDataBytes: 0
       defaultIconKey: pin-red
-  - source: github:quartz-community/obsidian-plugin-leaflet
-    enabled: false
-    order: 50
-    options: {}
 layout:
   groups:
     toolbar:
@@ -326,14 +261,12 @@ layout:
     folder:
       exclude:
         - reader-mode
-        - comments
-        - backlinks
+      positions:
+        right: []
     tag:
       exclude:
         - reader-mode
-        - comments
-        - backlinks
       positions:
-        afterBody: []
+        right: []
     canvas: {}
     bases: {}
