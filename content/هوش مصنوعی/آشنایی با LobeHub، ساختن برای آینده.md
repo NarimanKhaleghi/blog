@@ -4,17 +4,14 @@ title: آشنایی با LobeHub، ساختن برای آینده
 created: 2026-06-30
 modified: 2026-06-30
 published: 2026-06-30
+socialImage: lobehub.png
 socialDescription:
 date: 2026-06-30
 updated: 2026-06-30
 unlisted: false
 ---
 
----
-
-title: "LobeHub؛ ساختن یک AI Workspace شخصی برای آینده"
-date: 2026-06-30
-----------------
+![[images/lobehub.png]]
 
 > [!abstract] **چکیده**
 > چند روزی است که از LobeHub استفاده می‌کنم؛ یک محیط #OpenSource برای ساختن یک Workspace شخصی با مدل‌های مختلف #AI.
@@ -177,12 +174,6 @@ sudo apt update
 sudo apt install docker.io docker-compose-plugin
 ```
 
-بررسی نصب:
-
-```
-این نسخه با فلسفه Quartz بهتر هماهنگ است چون تگ‌ها مثل **نودهای یک دانش‌نامه شخصی** وسط متن پخش شده‌اند، نه مثل برچسب‌های یک CMS.
-```
-
 ## دریافت LobeHub
 
 یک فولدر بسازید:
@@ -266,7 +257,7 @@ AI     LLM     MCP
 
 چیزی که از این تجربه گرفتم این است که آینده احتمالاً فقط رقابت بین مدل‌ها نیست.
 موضوع اصلی #PersonalAI خواهد بود.
-اینکه AI شما چه چیزی درباره شما می‌داند؟
+اینکه AI شما چه چیزی درباره شما می‌د\`اند؟
 چه ابزارهایی دارد؟
 چگونه ساخته شده؟
 و چطور با Workflow شما هماهنگ شده؟
