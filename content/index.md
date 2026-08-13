@@ -11,7 +11,7 @@ updated: 2026-06-04
 unlisted: false
 ---
 
-![[images/home.webp]]
+![[images/home.png]]
 
 ## 🪴 به باغچه دیجیتال من خوش آمدید!
 
