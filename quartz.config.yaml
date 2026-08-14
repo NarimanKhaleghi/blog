@@ -108,15 +108,6 @@ plugins:
   - source: github:quartz-community/favicon
     enabled: true
     options: {}
-  - source: github:quartz-community/og-image
-    enabled: true
-    options:
-      colorScheme: darkMode
-      width: 1200
-      height: 630
-      excludeRoot: "true"
-      defaultDescription: socialDescription
-      defaultTitle: title
   - source: github:quartz-community/cname
     enabled: true
   - source: github:quartz-community/content-page

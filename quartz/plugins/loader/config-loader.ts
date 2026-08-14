@@ -478,6 +478,14 @@ export async function loadQuartzConfig(
     builtinPlugins.ComponentResources(),
     builtinPlugins.Assets(),
     builtinPlugins.Static(),
+    builtinPlugins.CustomOgImages({
+      colorScheme: "darkMode",
+      width: 1200,
+      height: 630,
+      excludeRoot: "true",
+      defaultDescription: "socialDescription",
+      defaultTitle: "title",
+    }),
   ]
   const builtinPageTypes = [builtinPlugins.PageTypes.NotFoundPageType()]
 

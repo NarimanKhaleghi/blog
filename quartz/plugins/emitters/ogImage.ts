@@ -1,0 +1,1 @@
+export { CustomOgImages, CustomOgImagesEmitterName } from "../../../plugins/og-image/dist/index.js"
