@@ -18,28 +18,28 @@ configuration:
     typography:
       header: Vazirmatn
       body: Vazirmatn
-      code: IBM Plex Mono
+      code: JetBrains Mono
     colors:
       lightMode:
-        light: "#FFFFFF"
-        lightgray: "#000000"
-        gray: "#000000"
-        darkgray: "#000000"
-        dark: "#000000"
-        secondary: "#5D9C5B"
-        tertiary: "#2962A0"
-        highlight: "#00000015"
-        textHighlight: "#00000015"
+        light: "#f4f3ee"
+        lightgray: "#d9d8cf"
+        gray: "#6c6960"
+        darkgray: "#1f1f24"
+        dark: "#101013"
+        secondary: "#101013"
+        tertiary: "#101013"
+        highlight: "#1010130f"
+        textHighlight: "#1010131f"
       darkMode:
-        light: "#000000"
-        lightgray: "#FFFFFF"
-        gray: "#FFFFFF"
-        darkgray: "#FFFFFF"
-        dark: "#FFFFFF"
-        secondary: "#5D9C5B"
-        tertiary: "#2962A0"
-        highlight: "#FFFFFF15"
-        textHighlight: "#FFFFFF15"
+        light: "#0a0a0b"
+        lightgray: "#1f1f22"
+        gray: "#96938a"
+        darkgray: "#d4d3cc"
+        dark: "#f2f1ec"
+        secondary: "#f2f1ec"
+        tertiary: "#f2f1ec"
+        highlight: "#f2f1ec0f"
+        textHighlight: "#f2f1ec1f"
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
@@ -194,7 +194,7 @@ plugins:
         strict: true
         reactionsEnabled: true
         inputPosition: top
-        themeUrl: https://thepm.ir/static/giscus/
+        themeUrl: https://giscus.app/themes
         darkTheme: dark
         lightTheme: light
     layout:
@@ -236,8 +236,9 @@ plugins:
     order: 50
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        GitHub: https://github.com/NarimanKhaleghi
+        LinkedIn: https://www.linkedin.com/in/narimankhaleghi/
+        Telegram: https://t.me/narimankhaleghi
   - source: github:quartz-community/obsidian-plugin-ttrpg-tools-maps
     enabled: true
     order: 50
