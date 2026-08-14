@@ -682,32 +682,17 @@ export async function loadQuartzLayout(layoutOverrides?: {
     }
   }
 
-  // Add Head (built-in) and Footer (plugin)
+  // Add Head and Footer (built-in source components)
   const HeadModule = await import("../../components/Head")
   const head = HeadModule.default()
-
-  // Find footer from component registry (loaded during plugin instantiation)
-  const footerEntry = json.plugins.find(
-    (e) => e.enabled && extractPluginName(e.source) === "footer",
-  )
-  let footer: QuartzComponent | undefined
-  if (footerEntry) {
-    // Try registry lookup: plugin name ("footer") or export name ("Footer")
-    const footerReg = componentRegistry.get("footer") ?? componentRegistry.get("Footer")
-    if (footerReg) {
-      if (typeof footerReg.component === "function" && !("displayName" in footerReg.component)) {
-        // It's a constructor — use registry cache for consistent instances
-        const footerOverrides = componentRegistry.getOptionOverrides("footer")
-        const opts = { ...footerEntry.options, ...footerOverrides }
-        footer = componentRegistry.instantiate(
-          footerReg.component as QuartzComponentConstructor,
-          Object.keys(opts).length > 0 ? opts : undefined,
-        )
-      } else {
-        footer = footerReg.component as QuartzComponent
-      }
-    }
-  }
+  const FooterModule = await import("../../components/Footer")
+  const footer = FooterModule.default({
+    links: {
+      GitHub: "https://github.com/NarimanKhaleghi",
+      LinkedIn: "https://www.linkedin.com/in/narimankhaleghi/",
+      Telegram: "https://t.me/narimankhaleghi",
+    },
+  })
 
   // Apply structural defaults
   defaultLayout.head = head

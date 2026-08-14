@@ -1457,6 +1457,20 @@ article img {
   margin: 0;
 }
 
+.page > #quartz-body > footer .footer-heart {
+  display: inline-grid;
+  place-items: center;
+  width: 1.6em;
+  height: 1.6em;
+  margin-inline: var(--s-2);
+  background: var(--bg2);
+  border: var(--bw-hair) solid var(--line2);
+  box-shadow: var(--sh-hair);
+  font-size: 0.85em;
+  line-height: 1;
+  vertical-align: -0.35em;
+}
+
 .page > #quartz-body > footer .footer-powered {
   margin-top: var(--s-1);
 }

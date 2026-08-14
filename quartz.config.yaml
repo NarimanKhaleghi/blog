@@ -222,14 +222,6 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
-  - source: github:quartz-community/footer
-    enabled: true
-    order: 50
-    options:
-      links:
-        GitHub: https://github.com/NarimanKhaleghi
-        LinkedIn: https://www.linkedin.com/in/narimankhaleghi/
-        Telegram: https://t.me/narimankhaleghi
   - source: github:quartz-community/obsidian-plugin-ttrpg-tools-maps
     enabled: true
     order: 50
