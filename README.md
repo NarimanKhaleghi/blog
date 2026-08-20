@@ -7,8 +7,7 @@
   
 # 📝 وبلاگ نریمان خالقی (The PM)
 
-**آدرس وب‌سایت: [thepm.ir](https://thepm.ir)** | **مستندات: [quartz.jzhao.xyz](https://quartz.jzhao.xyz)**
-
+**آدرس وب‌سایت: [blog.thepm.ir](https://blog.thepm.ir)** | **مستندات: [quartz.jzhao.xyz](https://quartz.jzhao.xyz)**
 
 ## 🛠️ تکنولوژی‌های استفاده شده
 
